@@ -2,7 +2,7 @@
   <div class="home">
     <h1>{{ msg }}</h1>
     <h2>Ecosystem</h2>
-    <button @click="clickBtn">test btn</button>
+    <el-button type="primary" @click="clickBtn">test btn</el-button>
   </div>
 </template>
 
