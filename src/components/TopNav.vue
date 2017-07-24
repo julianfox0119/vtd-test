@@ -1,5 +1,5 @@
 <template>
-    <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+    <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
         <el-menu-item index="1">处理中心</el-menu-item>
             <el-submenu index="2">
                 <template slot="title">我的工作台</template>
