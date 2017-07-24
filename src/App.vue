@@ -1,12 +1,18 @@
 <template>
   <div id="app">
+    <TopNav></TopNav>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import TopNav from './components/TopNav'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    TopNav
+  }
 }
 </script>
 
