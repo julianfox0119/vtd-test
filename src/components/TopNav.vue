@@ -51,7 +51,7 @@ header {
     display: inline-block;
     vertical-align: middle;
     height: 60%;
-    margin-left: 10px;
+    padding: .75em 1.125em;
 }
 .header-operations {
     display: inline-block;
