@@ -1,8 +1,8 @@
 <template>
-  <div id="app">
-    <TopNav></TopNav>
-    <router-view></router-view>
-  </div>
+  <el-row id="app">
+    <el-col :xs="24" :sm="24" :md="24" :lg="24"><TopNav></TopNav></el-col>
+    <el-col :xs="24" :sm="24" :md="24" :lg="24"><router-view></router-view></el-col>
+  </el-row>
 </template>
 
 <script>
@@ -26,6 +26,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  width: 100%;
 }
 </style>
