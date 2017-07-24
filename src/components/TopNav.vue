@@ -2,6 +2,12 @@
     <div>
         <header>
             <img src="../assets/navigation-logo.png" class="header-logo">
+            <ul class="header-operations">
+                <li>帮助</li>
+                <li>
+                    <span class="header-lang is-active">中文</span><span>/</span><span class="header-lang">En</span>
+                </li>
+            </ul>
         </header>
     </div>
 </template>
@@ -35,7 +41,7 @@ header {
     box-sizing: border-box;
     background-color: #000;
 }
-header:after {
+.header-operations:after, header:after {
     display: inline-block;
     content: "";
     height: 100%;
@@ -46,6 +52,26 @@ header:after {
     vertical-align: middle;
     height: 60%;
     margin-left: 10px;
+}
+.header-operations {
+    display: inline-block;
+    float: right;
+    padding-right: 30px;
+    height: 100%;
+}
+.header-operations li {
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+    margin: 0 10px;
+    line-height: 80px;
+    cursor: pointer;
+}
+ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
 }
 </style>
 
