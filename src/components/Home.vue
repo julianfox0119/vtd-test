@@ -2,6 +2,7 @@
   <div class="home">
     <h1>{{ msg }}</h1>
     <h2>Ecosystem</h2>
+    <button @click="clickBtn">test btn</button>
   </div>
 </template>
 
@@ -10,7 +11,12 @@ export default {
   name: 'home',
   data () {
     return {
-      msg: 'Welcome to Your VTD Dashboard'
+      msg: ''
+    }
+  },
+  methods: {
+    clickBtn: function (event) {
+      this.msg = 'Welcome to Your VTD Dashboard'
     }
   }
 }
