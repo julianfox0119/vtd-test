@@ -199,7 +199,7 @@
   position: static;
   vertical-align: middle;
   margin-left: 15px;
-  color: #dddddd;
+  /* color: var(--color-light-silver); */
   margin-top: -1px;
 }
 
@@ -208,6 +208,7 @@
 }
 
 .el-menu--horizontal > .el-menu-item:hover, .el-menu--horizontal > .el-submenu:hover .el-submenu__title, .el-menu--horizontal > .el-submenu.is-active .el-submenu__title{
+  color: #00adef;
   border-bottom: 5px solid #00adef;
 }
 
