@@ -307,8 +307,8 @@
   border-color: #666666;
 }
 .el-button--primary:hover, .el-button--primary:focus{
-  background: rgb(133, 133, 133);
-  border-color: rgb(133, 133, 133);
+  background: rgb(68, 68, 68);
+  border-color: rgb(68, 68, 68);
   color: #ffffff;
 }
 .el-button--primary:active{
@@ -344,8 +344,8 @@
   border-color: #13ce66;
 }
 .el-button--success:hover, .el-button--success:focus{
-  background: rgb(66, 216, 133);
-  border-color: rgb(66, 216, 133);
+  background: rgb(0, 195, 68);
+  border-color: rgb(0, 195, 68);
   color: #ffffff;
 }
 .el-button--success:active{
@@ -381,8 +381,8 @@
   border-color: #f7ba2a;
 }
 .el-button--warning:hover, .el-button--warning:focus{
-  background: rgb(249, 200, 85);
-  border-color: rgb(249, 200, 85);
+  background: rgb(245, 171, 0);
+  border-color: rgb(245, 171, 0);
   color: #ffffff;
 }
 .el-button--warning:active{
@@ -418,8 +418,8 @@
   border-color: #9f0002;
 }
 .el-button--danger:hover, .el-button--danger:focus{
-  background: rgb(178, 51, 53);
-  border-color: rgb(178, 51, 53);
+  background: rgb(138, 0, 0);
+  border-color: rgb(138, 0, 0);
   color: #ffffff;
 }
 .el-button--danger:active{
@@ -455,8 +455,8 @@
   border-color: #00adef;
 }
 .el-button--info:hover, .el-button--info:focus{
-  background: rgb(51, 189, 242);
-  border-color: rgb(51, 189, 242);
+  background: rgb(0, 155, 235);
+  border-color: rgb(0, 155, 235);
   color: #ffffff;
 }
 .el-button--info:active{
@@ -509,7 +509,7 @@
   padding-right: 0;
 }
 .el-button--text:hover, .el-button--text:focus{
-  color: rgb(76, 76, 76);
+  color: rgb(0, 0, 0);
 }
 .el-button--text:active{
   color: rgb(28, 28, 28);
@@ -714,7 +714,7 @@
 }
 .el-input.is-active .el-input__inner{
   outline: none;
-  border-color: #1f1f1f;
+  border-color: #494949;
 }
 .el-input__inner{
   -webkit-appearance: none;
@@ -749,7 +749,7 @@
 }
 .el-input__inner:focus{
   outline: none;
-  border-color: #1f1f1f;
+  border-color: #494949;
 }
 .el-input__icon{
   position: absolute;
@@ -900,7 +900,7 @@
 }
 .el-textarea__inner:focus{
   outline: none;
-  border-color: #1f1f1f;
+  border-color: #494949;
 }
 
 .el-message-box{

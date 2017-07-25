@@ -270,7 +270,7 @@
 
   --input-hover-border: var(--border-color-hover);
 
-  --input-focus-border: var(--color-primary);
+  --input-focus-border: #494949;
   --input-focus-fill: var(--color-white);
 
   --input-disabled-fill: var(--disabled-fill-base);
@@ -381,7 +381,7 @@
   --button-info-color: var(--color-white);
   --button-info-fill: var(--color-info);
 
-  --button-hover-tint-percent: 20%;
+  --button-hover-tint-percent: -22%;
   --button-active-shade-percent: 10%;
 
 

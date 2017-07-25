@@ -126,7 +126,7 @@
 }
 .el-input.is-active .el-input__inner{
     outline: none;
-    border-color: #1f1f1f;
+    border-color: #494949;
 }
 .el-input__inner{
     -webkit-appearance: none;
@@ -161,7 +161,7 @@
 }
 .el-input__inner:focus{
     outline: none;
-    border-color: #1f1f1f;
+    border-color: #494949;
 }
 .el-input__icon{
     position: absolute;
@@ -312,7 +312,7 @@
 }
 .el-textarea__inner:focus{
     outline: none;
-    border-color: #1f1f1f;
+    border-color: #494949;
 }
 :root{
     /* Transition
@@ -446,7 +446,7 @@
     color: #1f1f1f;
 }
 .el-input-number__increase:hover:not(.is-disabled) ~ .el-input .el-input__inner:not(.is-disabled), .el-input-number__decrease:hover:not(.is-disabled) ~ .el-input .el-input__inner:not(.is-disabled){
-    border-color: #1f1f1f;
+    border-color: #494949;
 }
 .el-input-number__increase.is-disabled, .el-input-number__decrease.is-disabled{
     color: #666666;
@@ -858,7 +858,7 @@
 }
 
 .el-slider.is-vertical.el-slider--with-input .el-slider__input:active .el-input-number__decrease, .el-slider.is-vertical.el-slider--with-input .el-slider__input:active .el-input-number__increase{
-    border-color: #1f1f1f;
+    border-color: #494949;
 }
 
 .el-slider__runway{

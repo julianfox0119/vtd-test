@@ -690,7 +690,7 @@
 }
 .el-input.is-active .el-input__inner {
     outline: none;
-    border-color: #1f1f1f;
+    border-color: #494949;
 }
 .el-input__inner {
     -webkit-appearance: none;
@@ -725,7 +725,7 @@
 }
 .el-input__inner:focus {
     outline: none;
-    border-color: #1f1f1f;
+    border-color: #494949;
 }
 .el-input__icon {
     position: absolute;
@@ -876,7 +876,7 @@
 }
 .el-textarea__inner:focus {
     outline: none;
-    border-color: #1f1f1f;
+    border-color: #494949;
 }
 @charset "UTF-8";
 :root {

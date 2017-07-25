@@ -113,7 +113,7 @@
 }
 .el-input.is-active .el-input__inner{
     outline: none;
-    border-color: #1f1f1f
+    border-color: #494949
 }
 .el-input__inner{
     -webkit-appearance: none;
@@ -148,7 +148,7 @@
 }
 .el-input__inner:focus{
     outline: none;
-    border-color: #1f1f1f
+    border-color: #494949
 }
 .el-input__icon{
     position: absolute;
@@ -299,7 +299,7 @@
 }
 .el-textarea__inner:focus{
     outline: none;
-    border-color: #1f1f1f
+    border-color: #494949
 }
 :root{
     /* Transition
@@ -443,7 +443,7 @@
 }
 
 .el-input-number__increase:hover:not(.is-disabled) ~ .el-input .el-input__inner:not(.is-disabled), .el-input-number__decrease:hover:not(.is-disabled) ~ .el-input .el-input__inner:not(.is-disabled){
-    border-color: #1f1f1f
+    border-color: #494949
 }
 
 .el-input-number__increase.is-disabled, .el-input-number__decrease.is-disabled{
