@@ -123,7 +123,7 @@
   /* Radio
   -------------------------- */
   --radio-font-size: 14px;
-  --radio-color: var(--color-base-black);
+  --radio-color: var(--color-info);
   --radio-input-height: 18px;
   --radio-input-width: 18px;
   --radio-input-border-radius: var(--border-radius-circle);
@@ -140,16 +140,16 @@
   --radio-disabled-checked-input-border-color: var(--disabled-border-base);
   --radio-disabled-checked-icon-color: var(--color-white);
 
-  --radio-checked-input-border-color: var(--color-primary);
+  --radio-checked-input-border-color: var(--color-info);
   --radio-checked-input-fill: var(--color-white);
-  --radio-checked-icon-color: var(--color-primary);
+  --radio-checked-icon-color: var(--color-info);
 
-  --radio-input-border-color-hover: var(--color-primary);
+  --radio-input-border-color-hover: var(--color-info);
 
   --radio-button-font-size: var(--font-size-base);
-  --radio-button-checked-fill: var(--color-primary);
+  --radio-button-checked-fill: var(--color-info);
   --radio-button-checked-color: var(--color-white);
-  --radio-button-checked-border-color: var(--color-primary);
+  --radio-button-checked-border-color: var(--color-info);
 
   /* Select
   -------------------------- */
@@ -259,7 +259,7 @@
   --input-height: 36px;
   --input-border: var(--border-base);
   --input-border-color: var(--border-color-base);
-  --input-border-radius: var(--border-radius-base);
+  --input-border-radius: 2px;
   --input-border-color-hover: var(--border-color-hover);
   --input-fill: var(--color-white);
   --input-fill-disabled: var(--disabled-fill-base);
@@ -333,7 +333,7 @@
   /* Button
   -------------------------- */
   --button-font-size: 14px;
-  --button-border-radius: var(--border-radius-base);
+  --button-border-radius: 2px;
   --button-padding-vertical: 10px;
   --button-padding-horizontal: 15px;
 

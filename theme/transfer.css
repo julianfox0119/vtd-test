@@ -223,7 +223,7 @@
             appearance: none;
     background-color: #ffffff;
     background-image: none;
-    border-radius: 4px;
+    border-radius: 2px;
     border: 1px solid #ececec;
     box-sizing: border-box;
     color: #1f1f1f;
@@ -315,7 +315,7 @@
     display: table-cell;
     position: relative;
     border: 1px solid #ececec;
-    border-radius: 4px;
+    border-radius: 2px;
     padding: 0 10px;
     width: 1px;
     white-space: nowrap;
@@ -384,7 +384,7 @@
     background-color: #ffffff;
     background-image: none;
     border: 1px solid #ececec;
-    border-radius: 4px;
+    border-radius: 2px;
     transition: border-color .2s cubic-bezier(.645,.045,.355,1);
 }
 .el-textarea__inner::-webkit-input-placeholder{
@@ -513,7 +513,7 @@
     -ms-user-select: none;
     padding: 10px 15px;
     font-size: 14px;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 .el-button + .el-button{
     margin-left: 10px;
@@ -770,17 +770,17 @@
 .el-button--large{
     padding: 11px 19px;
     font-size: 16px;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 .el-button--small{
     padding: 7px 9px;
     font-size: 12px;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 .el-button--mini{
     padding: 4px 4px;
     font-size: 12px;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 .el-button--text{
     border: none;

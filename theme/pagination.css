@@ -355,7 +355,7 @@
             appearance: none;
     background-color: #ffffff;
     background-image: none;
-    border-radius: 4px;
+    border-radius: 2px;
     border: 1px solid #ececec;
     box-sizing: border-box;
     color: #1f1f1f;
@@ -447,7 +447,7 @@
     display: table-cell;
     position: relative;
     border: 1px solid #ececec;
-    border-radius: 4px;
+    border-radius: 2px;
     padding: 0 10px;
     width: 1px;
     white-space: nowrap;
@@ -516,7 +516,7 @@
     background-color: #ffffff;
     background-image: none;
     border: 1px solid #ececec;
-    border-radius: 4px;
+    border-radius: 2px;
     transition: border-color .2s cubic-bezier(.645,.045,.355,1);
 }
 .el-textarea__inner::-webkit-input-placeholder{
