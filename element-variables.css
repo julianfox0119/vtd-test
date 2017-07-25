@@ -22,7 +22,7 @@
   --color-secondary: #333333;
   --color-white: #ffffff;
   --color-dark-white: #f8f8f8;
-  --color-black: #1f1f1f;
+  --color-black: #000000;
 
   --color-base-black: #1f1f1f;
   --color-light-black: #3c3c3c;
@@ -333,7 +333,7 @@
   /* Button
   -------------------------- */
   --button-font-size: 14px;
-  --button-border-radius: 2px;
+  --button-border-radius: 1px;
   --button-padding-vertical: 10px;
   --button-padding-horizontal: 15px;
 
@@ -349,21 +349,21 @@
   --button-mini-padding-vertical: 4px;
   --button-mini-padding-horizontal: 4px;
 
-  --button-default-color: var(--color-base-black);
-  --button-default-fill: var(--color-white);
+  --button-default-color: var(--color-white);
+  --button-default-fill: var(--color-base-silver);
   --button-default-border: #c4c4c4;
 
   --button-ghost-color: #666;
   --button-ghost-fill: transparent;
   --button-ghost-border: none;
 
-  --button-disabled-color: var(--color-extra-light-silver);
-  --button-disabled-fill: var(--color-extra-light-gray);
-  --button-disabled-border: var(--disabled-border-base);
+  --button-disabled-color: #bfbfbf;
+  --button-disabled-fill: #949494;
+  --button-disabled-border: #949494;
 
-  --button-primary-border: var(--color-primary);
+  --button-primary-border: var(--color-base-silver);
   --button-primary-color: var(--color-white);
-  --button-primary-fill: var(--color-primary);
+  --button-primary-fill: var(--color-base-silver);
 
   --button-success-border: var(--color-success);
   --button-success-color: var(--color-white);

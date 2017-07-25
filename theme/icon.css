@@ -27,10 +27,10 @@
 .el-icon-arrow-left:before { content: "\e601"; }
 .el-icon-arrow-right:before { content: "\e602"; }
 .el-icon-arrow-up:before { content: "\e603"; }
-.el-icon-caret-bottom:before { content: "\e604"; }
-.el-icon-caret-left:before { content: "\e605"; }
-.el-icon-caret-right:before { content: "\e606"; }
-.el-icon-caret-top:before { content: "\e607"; }
+.el-icon-caret-bottom:before { content: "\e600"; }
+.el-icon-caret-left:before { content: "\e601"; }
+.el-icon-caret-right:before { content: "\e602"; }
+.el-icon-caret-top:before { content: "\e603"; }
 .el-icon-check:before { content: "\e608"; }
 .el-icon-circle-check:before { content: "\e609"; }
 .el-icon-circle-close:before { content: "\e60a"; }

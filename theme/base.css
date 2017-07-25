@@ -197,16 +197,16 @@
     content: "\e603"
 }
 .el-icon-caret-bottom:before {
-    content: "\e604"
+    content: "\e600"
 }
 .el-icon-caret-left:before {
-    content: "\e605"
+    content: "\e601"
 }
 .el-icon-caret-right:before {
-    content: "\e606"
+    content: "\e602"
 }
 .el-icon-caret-top:before {
-    content: "\e607"
+    content: "\e603"
 }
 .el-icon-check:before {
     content: "\e608"

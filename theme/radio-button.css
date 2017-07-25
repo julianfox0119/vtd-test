@@ -115,10 +115,10 @@
     white-space: nowrap;
     vertical-align: middle;
     cursor: pointer;
-    background: #ffffff;
+    background: #666666;
     border: 1px solid #ececec;
     border-left: 0;
-    color: #1f1f1f;
+    color: #ffffff;
     -webkit-appearance: none;
     text-align: center;
     box-sizing: border-box;
@@ -164,11 +164,11 @@
 .el-radio-button__orig-radio:disabled{}
 
 .el-radio-button__orig-radio:disabled + .el-radio-button__inner{
-    color: #ececec;
+    color: #bfbfbf;
     cursor: not-allowed;
     background-image: none;
-    background-color: #ececec;
-    border-color: #666666;
+    background-color: #949494;
+    border-color: #949494;
     box-shadow: none
 }
 

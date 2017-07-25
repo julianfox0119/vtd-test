@@ -218,10 +218,10 @@
   line-height: 1;
   white-space: nowrap;
   cursor: pointer;
-  background: #ffffff;
+  background: #666666;
   border: 1px solid #ececec;
   border-color: #c4c4c4;
-  color: #1f1f1f;
+  color: #ffffff;
   -webkit-appearance: none;
   text-align: center;
   box-sizing: border-box;
@@ -232,7 +232,7 @@
   -ms-user-select: none;
   padding: 10px 15px;
   font-size: 14px;
-  border-radius: 2px;
+  border-radius: 1px;
 }
 .el-button + .el-button{
   margin-left: 10px;
@@ -270,11 +270,11 @@
 }
 .el-button.is-disabled{}
 .el-button.is-disabled, .el-button.is-disabled:hover, .el-button.is-disabled:focus{
-  color: #ececec;
+  color: #bfbfbf;
   cursor: not-allowed;
   background-image: none;
-  background-color: #ececec;
-  border-color: #666666;
+  background-color: #949494;
+  border-color: #949494;
 }
 .el-button.is-disabled.el-button--text{
   background-color: transparent;
@@ -303,39 +303,39 @@
 }
 .el-button--primary{
   color: #ffffff;
-  background-color: #1f1f1f;
-  border-color: #1f1f1f;
+  background-color: #666666;
+  border-color: #666666;
 }
 .el-button--primary:hover, .el-button--primary:focus{
-  background: rgb(76, 76, 76);
-  border-color: rgb(76, 76, 76);
+  background: rgb(133, 133, 133);
+  border-color: rgb(133, 133, 133);
   color: #ffffff;
 }
 .el-button--primary:active{
-  background: rgb(28, 28, 28);
-  border-color: rgb(28, 28, 28);
+  background: rgb(92, 92, 92);
+  border-color: rgb(92, 92, 92);
   color: #ffffff;
   outline: none;
 }
 .el-button--primary.is-active{
-  background: rgb(28, 28, 28);
-  border-color: rgb(28, 28, 28);
+  background: rgb(92, 92, 92);
+  border-color: rgb(92, 92, 92);
   color: #ffffff;
 }
 .el-button--primary.is-plain{
-  background: #ffffff;
+  background: #666666;
   border: 1px solid #ececec;
-  color: #1f1f1f;
+  color: #ffffff;
 }
 .el-button--primary.is-plain:hover, .el-button--primary.is-plain:focus{
   background: #ffffff;
-  border-color: #1f1f1f;
-  color: #1f1f1f;
+  border-color: #666666;
+  color: #666666;
 }
 .el-button--primary.is-plain:active{
   background: #ffffff;
-  border-color: rgb(28, 28, 28);
-  color: rgb(28, 28, 28);
+  border-color: rgb(92, 92, 92);
+  color: rgb(92, 92, 92);
   outline: none;
 }
 .el-button--success{
@@ -360,9 +360,9 @@
   color: #ffffff;
 }
 .el-button--success.is-plain{
-  background: #ffffff;
+  background: #666666;
   border: 1px solid #ececec;
-  color: #1f1f1f;
+  color: #ffffff;
 }
 .el-button--success.is-plain:hover, .el-button--success.is-plain:focus{
   background: #ffffff;
@@ -397,9 +397,9 @@
   color: #ffffff;
 }
 .el-button--warning.is-plain{
-  background: #ffffff;
+  background: #666666;
   border: 1px solid #ececec;
-  color: #1f1f1f;
+  color: #ffffff;
 }
 .el-button--warning.is-plain:hover, .el-button--warning.is-plain:focus{
   background: #ffffff;
@@ -434,9 +434,9 @@
   color: #ffffff;
 }
 .el-button--danger.is-plain{
-  background: #ffffff;
+  background: #666666;
   border: 1px solid #ececec;
-  color: #1f1f1f;
+  color: #ffffff;
 }
 .el-button--danger.is-plain:hover, .el-button--danger.is-plain:focus{
   background: #ffffff;
@@ -471,9 +471,9 @@
   color: #ffffff;
 }
 .el-button--info.is-plain{
-  background: #ffffff;
+  background: #666666;
   border: 1px solid #ececec;
-  color: #1f1f1f;
+  color: #ffffff;
 }
 .el-button--info.is-plain:hover, .el-button--info.is-plain:focus{
   background: #ffffff;
@@ -489,17 +489,17 @@
 .el-button--large{
   padding: 11px 19px;
   font-size: 16px;
-  border-radius: 2px;
+  border-radius: 1px;
 }
 .el-button--small{
   padding: 7px 9px;
   font-size: 12px;
-  border-radius: 2px;
+  border-radius: 1px;
 }
 .el-button--mini{
   padding: 4px 4px;
   font-size: 12px;
-  border-radius: 2px;
+  border-radius: 1px;
 }
 .el-button--text{
   border: none;
