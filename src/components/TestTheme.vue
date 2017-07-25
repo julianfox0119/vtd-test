@@ -24,6 +24,14 @@
             :picker-options="pickerOptions0">
             </el-date-picker>
         </div>
+        <div class="block">
+            <span class="demonstration">默认 click 触发子菜单: </span>
+            <el-cascader
+            :options="options2"
+            @active-item-change="handleItemChange"
+            :props="props"
+            ></el-cascader>
+        </div>
     </div>
 </template>
 
@@ -40,7 +48,33 @@ export default {
         disabledDate (time) {
           return time.getTime() < Date.now() - 8.64e7
         }
+      },
+      options2: [{
+        label: '江苏',
+        cities: []
+      }, {
+        label: '浙江',
+        cities: []
+      }],
+      props: {
+        value: 'label',
+        children: 'cities'
       }
+    }
+  },
+  methods: {
+    handleItemChange (val) {
+      setTimeout(_ => {
+        if (val.indexOf('江苏') > -1 && !this.options2[0].cities.length) {
+          this.options2[0].cities = [{
+            label: '南京'
+          }]
+        } else if (val.indexOf('浙江') > -1 && !this.options2[1].cities.length) {
+          this.options2[1].cities = [{
+            label: '杭州'
+          }]
+        }
+      }, 300)
     }
   }
 }
