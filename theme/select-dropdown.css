@@ -108,7 +108,7 @@
 .el-select-dropdown.is-multiple{}
 
 .el-select-dropdown.is-multiple .el-select-dropdown__item.selected{
-    color: #1f1f1f;
+    color: #3c3c3c;
     background-color: #ffffff;
 }
 

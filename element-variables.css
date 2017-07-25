@@ -172,7 +172,7 @@
   --select-option-disabled-background: var(--color-white);
   --select-option-height: 36px;
   --select-option-hover-background: var(--color-light-gray);
-  --select-option-selected: var(--color-primary);
+  --select-option-selected: var(--color-light-black);
   --select-option-selected-hover: shade(var(--color-primary), 0.12);
 
   --select-group-color: #999;
@@ -297,7 +297,7 @@
   --cascader-menu-border-width: var(--border-width-base);
   --cascader-menu-color: var(--font-color-base);
   --cascader-menu-option-color-active: var(--color-active);
-  --cascader-menu-option-fill-active: rgba(var(--color-active), 0.12);
+  --cascader-menu-option-fill-active: var(--color-active);
   --cascader-menu-option-color-hover: var(--font-color-base);
   --cascader-menu-option-fill-hover: rgba(var(--color-black), 0.06);
   --cascader-menu-option-color-disabled: #999;
