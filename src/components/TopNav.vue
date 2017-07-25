@@ -7,6 +7,7 @@
                 <li>
                     <span class="header-lang is-active">中文</span><span>/</span><span class="header-lang">En</span>
                 </li>
+                <!-- <li><el-button type="primary" icon="menu" size="large"></el-button></li> -->
             </ul>
         </header>
     </div>
@@ -31,12 +32,6 @@ export default {
 <style scoped>
 header {
     height: 80px;
-    /* position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 0 20px;
-    z-index: 1; */
     text-align: left;
     box-sizing: border-box;
     background-color: #000;
@@ -54,7 +49,6 @@ header {
     padding: .75em 1.125em;
 }
 .header-operations {
-    display: inline-block;
     float: right;
     padding-right: 30px;
     height: 100%;
