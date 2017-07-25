@@ -56,5 +56,10 @@ ul {
 .el-menu a{
     text-decoration: none;
 }
+@media (max-width: 550px) {
+  .header-logo{
+    display: none;
+  }
+}
 </style>
 
