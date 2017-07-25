@@ -101,11 +101,11 @@
 }
 
 .el-progress.is-exception .el-progress-bar__inner{
-  background-color:#ff4949;
+  background-color:#9f0002;
 }
 
 .el-progress.is-exception .el-progress__text{
-  color:#ff4949;
+  color:#9f0002;
 }
 
 .el-progress.is-success .el-progress-bar__inner{
@@ -118,7 +118,7 @@
 
 .el-progress__text{
   font-size:14px;
-  color:rgb(72, 87, 106);
+  color:#666666;
   display: inline-block;
   vertical-align: middle;
   margin-left: 10px;
@@ -176,7 +176,7 @@
 .el-progress-bar__outer{
   height: 6px;
   border-radius: 100px;
-  background-color:rgb(228, 232, 241);
+  background-color:#dddddd;
   overflow: hidden;
   position: relative;
   vertical-align: middle;
@@ -188,7 +188,7 @@
   top: 0;
   height: 100%;
   border-radius: 2px 0 0 2px;
-  background-color:#20a0ff;
+  background-color:#1f1f1f;
   text-align: right;
   border-radius: 100px;
   line-height: 1;
@@ -197,7 +197,7 @@
 .el-progress-bar__innerText{
   display: inline-block;
   vertical-align: middle;
-  color:#fff;
+  color:#ffffff;
   font-size: 12px;
   margin: 0 5px;
 }

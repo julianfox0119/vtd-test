@@ -100,7 +100,7 @@
     left: 50%;
     top: 20px;
     transform: translateX(-50%);
-    background-color: #fff;
+    background-color: #ffffff;
     transition: opacity 0.3s, transform .4s;
     overflow: hidden;
 }
@@ -110,11 +110,11 @@
 }
 
 .el-message .el-icon-circle-cross{
-    color: #ff4949;
+    color: #9f0002;
 }
 
 .el-message .el-icon-information{
-    color: #50bfff;
+    color: #00adef;
 }
 
 .el-message .el-icon-warning{
@@ -136,7 +136,7 @@
     font-size: 14px;
     margin: 0 34px 0 0;
     white-space: nowrap;
-    color: rgb(131, 145, 165);
+    color: #666666;
     text-align: justify;
 }
 
@@ -162,12 +162,12 @@
     right: 0;
     position: absolute;
     cursor: pointer;
-    color: rgb(191, 203, 217);
+    color: #ececec;
     font-size: 14px;
 }
 
 .el-message__closeBtn:hover{
-    color: rgb(151, 168, 190);
+    color: #dddddd;
 }
 
 .el-message-fade-enter, .el-message-fade-leave-active {

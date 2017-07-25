@@ -91,9 +91,9 @@
 }
 
 .el-card{
-    border: 1px solid rgb(209, 219, 229);
+    border: 1px solid #666666;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: #ffffff;
     overflow: hidden;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .12),
                 0px 0px 6px 0px rgba(0, 0, 0, .04)
@@ -101,7 +101,7 @@
 
 .el-card__header{
     padding: 18px 20px;
-    border-bottom: 1px solid rgb(209, 219, 229);
+    border-bottom: 1px solid #666666;
     box-sizing: border-box
 }
 
