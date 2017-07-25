@@ -527,11 +527,11 @@
   /* Menu
   --------------------------*/
   --menu-item-color: var(--color-info);
-  --menu-item-fill: var(--color-primary);
+  --menu-item-fill: var(--color-black);
   --menu-item-hover-fill: var(--color-info);
 
   --dark-menu-item-color: var(--color-info);
-  --dark-menu-item-fill: var(--color-primary);
+  --dark-menu-item-fill: var(--color-black);
   --dark-menu-item-hover-fill: var(--color-info);
 
   /* Rate

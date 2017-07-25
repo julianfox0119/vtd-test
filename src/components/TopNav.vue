@@ -1,13 +1,7 @@
 <template>
-    <div>
-        <header>
-            <img src="../assets/navigation-logo.png" class="header-logo">
-            <!-- <ul class="header-operations">
-                <li>帮助</li>
-                <li>
-                    <span class="header-lang is-active">中文</span><span>/</span><span class="header-lang">En</span>
-                </li>
-            </ul> -->
+    <el-row class="header">
+        <el-col :xs="1" :sm="1" :md="2" :lg="2"><img src="../assets/navigation-logo.png" class="header-logo"></el-col>
+        <el-col :xs="22" :sm="22" :md="20" :lg="20">
             <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
                 <el-menu-item index="1">帮助</el-menu-item>
                 <el-submenu index="2">
@@ -18,8 +12,8 @@
                 </el-submenu> 
                 <el-menu-item index="2"><a href="/test">主题测试</a></el-menu-item>
             </el-menu>
-        </header>
-    </div>
+        </el-col>
+    </el-row>
 </template>
 
 <script>
@@ -39,37 +33,17 @@ export default {
 </script>
 
 <style scoped>
-header {
-    height: 60px;
+.header {  
     text-align: left;
     box-sizing: border-box;
-    background-color: #1f1f1f;
-}
-.header-operations:after, header:after {
-    display: inline-block;
-    content: "";
-    height: 100%;
-    vertical-align: middle;
+    background-color: #000000;
 }
 .header-logo {
     display: inline-block;
     vertical-align: middle;
     height: 60%;
     padding: .75em 1.125em;
-}
-.header-operations {
-    float: right;
-    padding-right: 30px;
-    height: 100%;
-}
-.header-operations li {
-    color: #fff;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 10px;
-    margin: 0 10px;
-    line-height: 80px;
-    cursor: pointer;
+    max-height: 35px;
 }
 ul {
     list-style: none outside none;
