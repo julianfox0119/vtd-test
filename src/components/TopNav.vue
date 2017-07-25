@@ -1,7 +1,7 @@
 <template>
     <el-row class="header">
         <el-col :xs="1" :sm="1" :md="2" :lg="2"><img src="../assets/navigation-logo.png" class="header-logo"></el-col>
-        <el-col :xs="22" :sm="22" :md="20" :lg="20">
+        <el-col :xs="23" :sm="23" :md="22" :lg="22">
             <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
                 <el-menu-item index="1">帮助</el-menu-item>
                 <el-submenu index="2">
