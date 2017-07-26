@@ -10,7 +10,10 @@
                     <el-menu-item index="2-2">选项2</el-menu-item>
                     <el-menu-item index="2-3">选项3</el-menu-item>
                 </el-submenu> 
-                <el-menu-item index="2"><a href="/test">主题测试</a></el-menu-item>
+                <el-menu-item index="2">
+                    <!-- <a href="/test">主题测试</a> -->
+                    <router-link to="/test">主题测试</router-link>
+                </el-menu-item>
             </el-menu>
         </el-col>
     </el-row>
