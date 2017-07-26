@@ -2,7 +2,6 @@
     <div class="testTheme">  
         <div>Button:
             <el-button type="primary">主要按钮</el-button>
-            <el-button type="text">文字按钮</el-button>
             <el-button type="info">信息按钮</el-button>
             <el-button type="primary" :disabled="true">主要按钮</el-button>
             <button type="button" class="el-button el-button--primary">
