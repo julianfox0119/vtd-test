@@ -90,7 +90,7 @@
   /* Checkbox
   -------------------------- */
   --checkbox-font-size: 14px;
-  --checkbox-color: var(--color-base-black);
+  --checkbox-color: var(--color-base-silver);
   --checkbox-input-height: 18px;
   --checkbox-input-width: 18px;
   --checkbox-input-border-radius: var(--border-radius-base);
@@ -108,15 +108,15 @@
   --checkbox-disabled-checked-icon-color: var(--color-white);
 
   --checkbox-checked-input-border-color: var(--color-secondary);
-  --checkbox-checked-input-fill: var(--color-primary);
+  --checkbox-checked-input-fill: var(--color-base-silver);
   --checkbox-checked-icon-color: var(--fill-base);
 
-  --checkbox-input-border-color-hover: var(--color-primary);
+  --checkbox-input-border-color-hover: var(--color-base-silver);
 
   --checkbox-button-font-size: var(--font-size-base);
-  --checkbox-button-checked-fill: var(--color-primary);
+  --checkbox-button-checked-fill: var(--color-base-silver);
   --checkbox-button-checked-color: var(--color-white);
-  --checkbox-button-checked-border-color: var(--color-primary);
+  --checkbox-button-checked-border-color: var(--color-base-silver);
 
 
 
