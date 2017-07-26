@@ -20220,7 +20220,7 @@
     display: inline-block;
     position: absolute;
     border-color: inherit;
-    background-color: #ececec;
+    background-color: #666666;
 }
 .el-step__line.is-vertical {
     width: 2px;
@@ -20281,12 +20281,12 @@
     border-color: #00adef;
 }
 .el-step__head.is-wait {
-    color: #ececec;
-    border-color: #ececec;
+    color: #666666;
+    border-color: #666666;
 }
 .el-step__head.is-process {
-    color: #ececec;
-    border-color: #ececec;
+    color: #666666;
+    border-color: #666666;
 }
 .el-step__head.is-text {
     font-size: 14px;
@@ -20309,14 +20309,14 @@
     border-color: #00adef;
 }
 .el-step__head.is-text.is-wait {
-    color: #ececec;
+    color: #666666;
     background-color: #ffffff;
-    border-color: #ececec;
+    border-color: #666666;
 }
 .el-step__head.is-text.is-process {
     color: #ffffff;
-    background-color: #ececec;
-    border-color: #ececec;
+    background-color: #666666;
+    border-color: #666666;
 }
 .el-step__main {
     white-space: normal;
@@ -20342,7 +20342,7 @@
 }
 .el-step__title.is-wait {
     font-weight: 400;
-    color: #dddddd;
+    color: #666666;
 }
 .el-step__title.is-process {
     font-weight: 700;
@@ -20363,10 +20363,10 @@
     color: #00adef;
 }
 .el-step__description.is-wait {
-    color: #ececec;
+    color: #666666;
 }
 .el-step__description.is-process {
-    color: #666666;
+    color: #3c3c3c;
 }
 @charset "UTF-8";
 :root {

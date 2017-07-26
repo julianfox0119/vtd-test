@@ -117,7 +117,7 @@
     display: inline-block;
     position: absolute;
     border-color: inherit;
-    background-color: #ececec;
+    background-color: #666666;
 }
 
 .el-step__line.is-vertical{
@@ -190,13 +190,13 @@
 }
 
 .el-step__head.is-wait{
-    color: #ececec;
-    border-color: #ececec;
+    color: #666666;
+    border-color: #666666;
 }
 
 .el-step__head.is-process{
-    color: #ececec;
-    border-color: #ececec;
+    color: #666666;
+    border-color: #666666;
 }
 
 .el-step__head.is-text{
@@ -224,15 +224,15 @@
 }
 
 .el-step__head.is-text.is-wait{
-    color: #ececec;
+    color: #666666;
     background-color: #ffffff;
-    border-color: #ececec;
+    border-color: #666666;
 }
 
 .el-step__head.is-text.is-process{
     color: #ffffff;
-    background-color: #ececec;
-    border-color: #ececec;
+    background-color: #666666;
+    border-color: #666666;
 }
 
 .el-step__main{
@@ -264,7 +264,7 @@
 
 .el-step__title.is-wait{
     font-weight: 400;
-    color: #dddddd;
+    color: #666666;
 }
 
 .el-step__title.is-process{
@@ -291,11 +291,11 @@
 }
 
 .el-step__description.is-wait{
-    color: #ececec;
+    color: #666666;
 }
 
 .el-step__description.is-process{
-    color: #666666;
+    color: #3c3c3c;
 }
 :root{
     /* Transition
