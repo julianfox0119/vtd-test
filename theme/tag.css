@@ -187,16 +187,16 @@
 .el-tag--danger{
     background-color: rgba(255,73,73,0.10);
     border-color: rgba(255,73,73,0.20);
-    color: #9f0002
+    color: #ff4949
 }
 
 .el-tag--danger .el-tag__close:hover{
-    background-color: #9f0002;
+    background-color: #ff4949;
     color: #ffffff
 }
 
 .el-tag--danger.is-hit{
-    border-color: #9f0002
+    border-color: #ff4949
 }
 :root{
     /* Transition

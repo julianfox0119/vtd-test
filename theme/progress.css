@@ -101,11 +101,11 @@
 }
 
 .el-progress.is-exception .el-progress-bar__inner{
-  background-color:#9f0002;
+  background-color:#ff4949;
 }
 
 .el-progress.is-exception .el-progress__text{
-  color:#9f0002;
+  color:#ff4949;
 }
 
 .el-progress.is-success .el-progress-bar__inner{
