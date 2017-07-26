@@ -534,6 +534,10 @@
 .el-button [class*="el-icon-"] + span{
     margin-left: 5px;
 }
+.el-button [class*="mb-icon-"]{}
+.el-button [class*="mb-icon-"] + span{
+    margin-left: 15px;
+}
 .el-button.is-loading{
     position: relative;
     pointer-events: none;

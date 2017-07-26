@@ -1,10 +1,14 @@
 <template>
-    <div class="testTheme">
+    <div class="testTheme">  
         <div>Button:
             <el-button type="primary">主要按钮</el-button>
             <el-button type="text">文字按钮</el-button>
             <el-button type="info">信息按钮</el-button>
             <el-button type="primary" :disabled="true">主要按钮</el-button>
+            <button type="button" class="el-button el-button--primary">
+                <i class="mb-icon-home"></i>
+                <span>Home</span>
+            </button>
         </div>
         <div>Ratio:
             <el-radio class="radio" v-model="radio" label="1">备选项</el-radio>

@@ -198,7 +198,7 @@
 .el-menu--horizontal .el-submenu .el-submenu__icon-arrow{
   position: static;
   vertical-align: middle;
-  margin-left: 15px;
+  margin-left: 25px;
   /* color: var(--color-light-silver); */
   margin-top: -1px;
 }
