@@ -9416,7 +9416,7 @@
     position: absolute;
     min-width: 180px;
     box-sizing: border-box;
-    box-shadow: 0 2px 6px #ccc;
+    /* box-shadow: 0 2px 6px #ccc; */
     background: #ffffff;
     z-index: 10;
     top: 41px;
@@ -9615,7 +9615,7 @@
 .el-picker-panel {
     color: #666666;
     border: 1px solid #666666;
-    box-shadow: 0 2px 6px #ccc;
+    /* box-shadow: 0 2px 6px #ccc; */
     background: #ffffff;
     border-radius: 2px;
     line-height: 20px;
@@ -10933,7 +10933,7 @@
     position: absolute;
     min-width: 180px;
     box-sizing: border-box;
-    box-shadow: 0 2px 6px #ccc;
+    /* box-shadow: 0 2px 6px #ccc; */
     background: #ffffff;
     z-index: 10;
     top: 41px;
@@ -11132,7 +11132,7 @@
 .el-picker-panel {
     color: #666666;
     border: 1px solid #666666;
-    box-shadow: 0 2px 6px #ccc;
+    /* box-shadow: 0 2px 6px #ccc; */
     background: #ffffff;
     border-radius: 2px;
     line-height: 20px;
@@ -11810,7 +11810,7 @@
     position: absolute;
     min-width: 180px;
     box-sizing: border-box;
-    box-shadow: 0 2px 6px #ccc;
+    /* box-shadow: 0 2px 6px #ccc; */
     background: #ffffff;
     z-index: 10;
     top: 41px;

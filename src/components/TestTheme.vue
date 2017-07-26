@@ -17,7 +17,7 @@
         <div>Checkbox:
             <el-checkbox v-model="checked">备选项</el-checkbox>
         </div>
-        <div>Input:
+        <div class="myinput">Input:
             <el-input v-model="input" placeholder="请输入内容"></el-input>
         </div>
         <div class="block">
@@ -150,7 +150,7 @@ export default {
     .testTheme div{
         margin-top:10px;
     }
-    .el-input{
+    .myinput .el-input{
         width: 180px;
-    }
+    } 
 </style>
