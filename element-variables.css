@@ -553,8 +553,8 @@
   --datepicker-cell-hover-color: var(--color-light-gray);
   --datepicker-inrange-color: tint(var(--color-primary), 0.8);
   --datepicker-inrange-hover-color: tint(var(--color-primary), 0.64);
-  --datepicker-active-color: var(--color-primary);
-  --datepicker-text-hover-color: var(--color-primary);
+  --datepicker-active-color: var(--color-info);
+  --datepicker-text-hover-color: var(--color-info);
 
   /* Loading
   --------------------------*/

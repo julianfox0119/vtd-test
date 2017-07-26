@@ -30,6 +30,16 @@
             </el-date-picker>
         </div>
         <div class="block">
+            <span class="demonstration">Date Picker (Scope): </span>
+            <el-date-picker
+            v-model="value7"
+            type="daterange"
+            align="right"
+            placeholder="选择日期范围"
+            :picker-options="pickerOptions2">
+            </el-date-picker>
+        </div>
+        <div class="block">
             <span class="demonstration">默认 click 触发子菜单: </span>
             <el-cascader
             :options="options2"
@@ -48,11 +58,39 @@ export default {
       radio: '1',
       checked: true,
       input: '',
+      value7: '',
       value1: '',
       pickerOptions0: {
         disabledDate (time) {
           return time.getTime() < Date.now() - 8.64e7
         }
+      },
+      pickerOptions2: {
+        shortcuts: [{
+          text: '最近一周',
+          onClick (picker) {
+            const end = new Date()
+            const start = new Date()
+            start.setTime(start.getTime() - 3600 * 1000 * 24 * 7)
+            picker.$emit('pick', [start, end])
+          }
+        }, {
+          text: '最近一个月',
+          onClick (picker) {
+            const end = new Date()
+            const start = new Date()
+            start.setTime(start.getTime() - 3600 * 1000 * 24 * 30)
+            picker.$emit('pick', [start, end])
+          }
+        }, {
+          text: '最近三个月',
+          onClick (picker) {
+            const end = new Date()
+            const start = new Date()
+            start.setTime(start.getTime() - 3600 * 1000 * 24 * 90)
+            picker.$emit('pick', [start, end])
+          }
+        }]
       },
       options2: [{
         label: '江苏',

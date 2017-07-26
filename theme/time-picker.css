@@ -529,7 +529,7 @@
     font-size: 14px;
     margin-top: -15px;
     line-height: 16px;
-    background-color: #1f1f1f;
+    background-color: #00adef;
     height: 32px;
     z-index: -1;
     left: 0;
@@ -574,7 +574,7 @@
 }
 .el-time-panel__btn.confirm {
     font-weight: 800;
-    color: #1f1f1f;
+    color: #00adef;
 }
 @charset "UTF-8";
 :root {

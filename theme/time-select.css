@@ -499,7 +499,7 @@
 }
 .el-picker-panel__shortcut.active {
   background-color: #e6f1fe;
-  color: #1f1f1f;
+  color: #00adef;
 }
 .el-picker-panel__btn {
   border: 1px solid #dcdcdc;
@@ -526,7 +526,7 @@
   margin-top: 3px;
 }
 .el-picker-panel__icon-btn:hover {
-  color: #1f1f1f;
+  color: #00adef;
 }
 .el-picker-panel__link-btn {
   cursor: pointer;
@@ -594,10 +594,10 @@
   cursor: pointer;
 }
 .el-date-picker__header-label:hover {
-  color: #1f1f1f;
+  color: #00adef;
 }
 .el-date-picker__header-label.active {
-  color: #1f1f1f;
+  color: #00adef;
 }
 .el-date-picker__prev-btn {
   float: left;
@@ -865,7 +865,7 @@
 }
 
 .time-select-item.selected:not(.disabled) {
-  background-color: #1f1f1f;
+  background-color: #00adef;
   color: #ffffff
 }
 
