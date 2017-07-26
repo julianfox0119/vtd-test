@@ -4,7 +4,7 @@
             <el-button type="primary">主要按钮</el-button>
             <el-button type="info">信息按钮</el-button>
             <el-button type="primary" :disabled="true">主要按钮</el-button>
-            <button type="button" class="el-button el-button--primary">
+            <button type="button" class="el-button el-button--primary" @click="goHome">
                 <i class="mb-icon-home"></i>
                 <span>Home</span>
             </button>
@@ -121,6 +121,9 @@ export default {
     }
   },
   methods: {
+    goHome () {
+      this.$router.push('/')
+    },
     next () {
       if (this.active++ > 2) this.active = 0
     },
