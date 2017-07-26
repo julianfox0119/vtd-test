@@ -109,11 +109,11 @@
 }
 
 .el-progress.is-success .el-progress-bar__inner{
-  background-color:#13ce66;
+  background-color:#00adef;
 }
 
 .el-progress.is-success .el-progress__text{
-  color:#13ce66;
+  color:#00adef;
 }
 
 .el-progress__text{

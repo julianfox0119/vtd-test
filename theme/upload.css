@@ -118,10 +118,10 @@
     color: #9f0002;
 }
 .el-progress.is-success .el-progress-bar__inner{
-    background-color: #13ce66;
+    background-color: #00adef;
 }
 .el-progress.is-success .el-progress__text{
-    color: #13ce66;
+    color: #00adef;
 }
 .el-progress__text{
     font-size: 14px;
@@ -436,7 +436,7 @@
 }
 
 .el-upload-list__item .el-icon-upload-success{
-    color: #13ce66;
+    color: #00adef;
 }
 
 .el-upload-list__item .el-icon-close{

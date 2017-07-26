@@ -13,7 +13,7 @@
   -------------------------- */
   --color-primary: #1f1f1f;
 
-  --color-success: #13ce66;
+  --color-success: #00adef;
   --color-warning: #f7ba2a;
   --color-danger: #9f0002;
   --color-info: #00adef;
@@ -432,7 +432,7 @@
   --pagination-button-disabled-color: #e4e4e4;
   --pagination-button-disabled-fill: var(--color-white);
   --pagination-border-color: var(--disabled-border-base);
-  --pagination-hover-fill: var(--color-primary);
+  --pagination-hover-fill: var(--color-info);
   --pagination-hover-color: var(--color-white);
 
   /* Popover

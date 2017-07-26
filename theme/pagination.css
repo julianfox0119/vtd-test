@@ -684,14 +684,14 @@
 .el-tag--success{
     background-color: rgba(18,206,102,0.10);
     border-color: rgba(18,206,102,0.20);
-    color: #13ce66;
+    color: #00adef;
 }
 .el-tag--success .el-tag__close:hover{
-    background-color: #13ce66;
+    background-color: #00adef;
     color: #ffffff;
 }
 .el-tag--success.is-hit{
-    border-color: #13ce66;
+    border-color: #00adef;
 }
 .el-tag--warning{
     background-color: rgba(247,186,41,0.10);
@@ -1333,7 +1333,7 @@
 }
 
 .el-pagination button:hover{
-    color: #1f1f1f;
+    color: #00adef;
 }
 
 .el-pagination button.disabled{
@@ -1393,7 +1393,7 @@
 }
 
 .el-pagination__sizes .el-input .el-input__inner:hover{
-    border-color: #1f1f1f;
+    border-color: #00adef;
 }
 
 .el-pagination__jump{
@@ -1427,7 +1427,7 @@
 
 .el-pagination__editor:focus{
     outline: none;
-    border-color: #1f1f1f;
+    border-color: #00adef;
 }
 
 .el-pager{
@@ -1483,12 +1483,12 @@
 }
 
 .el-pager li:hover{
-    color: #1f1f1f;
+    color: #00adef;
 }
 
 .el-pager li.active{
-    border-color: #1f1f1f;
-    background-color: #1f1f1f;
+    border-color: #00adef;
+    background-color: #00adef;
     color: #ffffff;
     cursor: default;
 }

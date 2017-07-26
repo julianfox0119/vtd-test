@@ -47,6 +47,21 @@
             :props="props"
             ></el-cascader>
         </div>
+        <div class="block">
+            <el-steps :space="100" :active="active" finish-status="success">
+                <el-step title="步骤 1"></el-step>
+                <el-step title="步骤 2"></el-step>
+                <el-step title="步骤 3"></el-step>
+            </el-steps>
+            <el-button type="primary" style="margin-top: 12px;" @click="next">下一步</el-button>
+        </div> 
+        <div class="block">
+            <span class="demonstration">大于 7 页时的效果</span>
+            <el-pagination
+                layout="prev, pager, next"
+                :total="1000">
+            </el-pagination>
+        </div>
     </div>
 </template>
 
@@ -55,6 +70,7 @@ export default {
   name: 'theme',
   data () {
     return {
+      active: 0,
       radio: '1',
       checked: true,
       input: '',
@@ -106,6 +122,9 @@ export default {
     }
   },
   methods: {
+    next () {
+      if (this.active++ > 2) this.active = 0
+    },
     handleItemChange (val) {
       setTimeout(_ => {
         if (val.indexOf('江苏') > -1 && !this.options2[0].cities.length) {
