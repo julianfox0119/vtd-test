@@ -32,6 +32,7 @@ body {
 .main-content{
   max-width: 1200px;
   margin: 30px auto;
+  padding: 10px;
 }
 
 </style>
