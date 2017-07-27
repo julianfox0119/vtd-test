@@ -544,9 +544,9 @@
 
   /* DatePicker
   --------------------------*/
-  --datepicker-color: var(--link-color);
-  --datepicker-off-color: #ddd;
-  --datepicker-header-color: var(--border-color-hover);
+  --datepicker-color: #ddd;
+  --datepicker-off-color: var(--link-color);
+  --datepicker-header-color: #ddd;
   --datepicker-icon-color: var(--color-light-silver);
   --datepicker-border-color: var(--disabled-border-base);
   --datepicker-inner-border-color: #e4e4e4;
