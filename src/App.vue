@@ -30,7 +30,7 @@ body {
   /* color: #2c3e50; */
 }
 .main-content{
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 30px auto;
 }
 

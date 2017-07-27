@@ -44,7 +44,7 @@ header {
     background-color: #000000;   
 }
 .head_container{
-    max-width: 1024px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .head_logo, .head_nav{
@@ -54,7 +54,7 @@ header {
     display: inline-block;
     vertical-align: middle;
     height: 60%;
-    padding: .75em 1.125em;  
+    padding: .75em 0;  
     max-height: 65px;
 }
 ul {
