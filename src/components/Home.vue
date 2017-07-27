@@ -26,8 +26,6 @@ export default {
 <style scoped>
 .home{
   text-align: center;
-  max-width: 1024px;
-  margin: 30px auto;
 }
 h1, h2 {
   font-weight: normal;

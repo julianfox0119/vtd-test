@@ -1,7 +1,7 @@
 <template>
   <el-row id="app">
     <el-col :xs="24" :sm="24" :md="24" :lg="24"><TopNav></TopNav></el-col>
-    <el-col :xs="24" :sm="24" :md="24" :lg="24" class="main-content"><router-view></router-view></el-col>
+    <el-col :xs="24" :sm="24" :md="24" :lg="24"><router-view class="main-content"></router-view></el-col>
   </el-row>
 </template>
 
@@ -28,6 +28,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   /* color: #2c3e50; */
+}
+.main-content{
+  max-width: 1024px;
+  margin: 30px auto;
 }
 
 </style>

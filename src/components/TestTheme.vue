@@ -183,8 +183,6 @@ export default {
 
 <style scoped>
     .testTheme{
-        max-width: 1024px;
-        margin: 30px auto;
         text-align: left;
     }
     .testTheme div{
