@@ -119,12 +119,12 @@
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-    background-color: #ffffff;
+    background-color: #3c3c3c;
     background-image: none;
     border-radius: 2px;
-    border: 1px solid #ececec;
+    border: 1px solid #494949;
     box-sizing: border-box;
-    color: #1f1f1f;
+    color: #ffffff;
     display: inline-block;
     font-size: inherit;
     height: 36px;
@@ -144,7 +144,7 @@
     color: #dddddd;
 }
 .el-input__inner:hover{
-    border-color: #666666;
+    border-color: #494949;
 }
 .el-input__inner:focus{
     outline: none;
@@ -173,10 +173,10 @@
 .el-input__icon.is-clickable{}
 .el-input__icon.is-clickable:hover{
     cursor: pointer;
-    color: #666666;
+    color: #494949;
 }
 .el-input__icon.is-clickable:hover + .el-input__inner{
-    border-color: #666666;
+    border-color: #494949;
 }
 .el-input--large{
     font-size: 16px;
@@ -278,10 +278,10 @@
     box-sizing: border-box;
     width: 100%;
     font-size: 14px;
-    color: #1f1f1f;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #3c3c3c;
     background-image: none;
-    border: 1px solid #ececec;
+    border: 1px solid #494949;
     border-radius: 2px;
     transition: border-color .2s cubic-bezier(.645,.045,.355,1);
 }
@@ -295,7 +295,7 @@
     color: #dddddd;
 }
 .el-textarea__inner:hover{
-    border-color: #666666;
+    border-color: #494949;
 }
 .el-textarea__inner:focus{
     outline: none;
