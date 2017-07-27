@@ -1,22 +1,24 @@
 <template>
-    <el-row class="header">
-        <el-col :xs="1" :sm="1" :md="2" :lg="2"><img src="../assets/navigation-logo.png" class="header-logo"></el-col>
-        <el-col :xs="23" :sm="23" :md="22" :lg="22">
-            <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-                <el-menu-item index="1">帮助</el-menu-item>
-                <el-submenu index="2">
-                    <template slot="title">我的工作台</template>
-                    <el-menu-item index="2-1">选项1</el-menu-item>
-                    <el-menu-item index="2-2">选项2</el-menu-item>
-                    <el-menu-item index="2-3">选项3</el-menu-item>
-                </el-submenu> 
-                <el-menu-item index="2">
-                    <!-- <a href="/test">主题测试</a> -->
-                    <router-link to="/test">主题测试</router-link>
-                </el-menu-item>
-            </el-menu>
-        </el-col>
-    </el-row>
+    <header>
+        <el-row>
+            <el-col :xs="1" :sm="1" :md="2" :lg="2"><img src="../assets/mblogo.png" class="header-logo"></el-col>
+            <el-col :xs="23" :sm="23" :md="22" :lg="22">
+                <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+                    <el-menu-item index="1">帮助</el-menu-item>
+                    <el-submenu index="2">
+                        <template slot="title">我的工作台</template>
+                        <el-menu-item index="2-1">选项1</el-menu-item>
+                        <el-menu-item index="2-2">选项2</el-menu-item>
+                        <el-menu-item index="2-3">选项3</el-menu-item>
+                    </el-submenu> 
+                    <el-menu-item index="2">
+                        <!-- <a href="/test">主题测试</a> -->
+                        <router-link to="/test">主题测试</router-link>
+                    </el-menu-item>
+                </el-menu>
+            </el-col>
+        </el-row>
+    </header>
 </template>
 
 <script>
@@ -36,7 +38,7 @@ export default {
 </script>
 
 <style scoped>
-.header {  
+header {  
     text-align: left;
     box-sizing: border-box;
     background-color: #000000;
@@ -46,7 +48,7 @@ export default {
     vertical-align: middle;
     height: 60%;
     padding: .75em 1.125em;
-    max-height: 35px;
+    max-height: 65px;
 }
 ul {
     list-style: none outside none;
@@ -55,6 +57,7 @@ ul {
 }
 .el-menu-demo{
     float: right;
+    height: 65px;
 }
 .el-menu a{
     text-decoration: none;
