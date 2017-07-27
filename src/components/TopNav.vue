@@ -41,13 +41,13 @@ export default {
 header {  
     text-align: left;
     box-sizing: border-box;
-    background-color: #000000;
+    background-color: #000000;   
 }
 .header-logo {
     display: inline-block;
     vertical-align: middle;
     height: 60%;
-    padding: .75em 1.125em;
+    padding: .75em 1.125em;  
     max-height: 65px;
 }
 ul {
@@ -63,9 +63,9 @@ ul {
     text-decoration: none;
 }
 @media (max-width: 550px) {
-  .header-logo{
+  /* .header-logo{
     display: none;
-  }
+  } */
 }
 
 </style>
