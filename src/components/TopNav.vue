@@ -1,6 +1,6 @@
 <template>
     <header>
-        <el-row>
+        <el-row class="head_container">
             <el-col :xs="1" :sm="1" :md="2" :lg="2" class="head_logo"><img src="../assets/mblogo.png" class="header-logo"></el-col>
             <el-col :xs="23" :sm="23" :md="22" :lg="22" class="head_nav">
                 <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
@@ -42,6 +42,10 @@ header {
     text-align: left;
     box-sizing: border-box;
     background-color: #000000;   
+}
+.head_container{
+    max-width: 1024px;
+    margin: 0 auto;
 }
 .head_logo, .head_nav{
     min-height: 89px;
