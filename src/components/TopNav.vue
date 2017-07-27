@@ -1,8 +1,8 @@
 <template>
     <header>
         <el-row>
-            <el-col :xs="1" :sm="1" :md="2" :lg="2"><img src="../assets/mblogo.png" class="header-logo"></el-col>
-            <el-col :xs="23" :sm="23" :md="22" :lg="22">
+            <el-col :xs="1" :sm="1" :md="2" :lg="2" class="head_logo"><img src="../assets/mblogo.png" class="header-logo"></el-col>
+            <el-col :xs="23" :sm="23" :md="22" :lg="22" class="head_nav">
                 <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
                     <el-menu-item index="1">帮助</el-menu-item>
                     <el-submenu index="2">
@@ -43,6 +43,9 @@ header {
     box-sizing: border-box;
     background-color: #000000;   
 }
+.head_logo, .head_nav{
+    min-height: 89px;
+}
 .header-logo {
     display: inline-block;
     vertical-align: middle;
@@ -57,7 +60,6 @@ ul {
 }
 .el-menu-demo{
     float: right;
-    height: 65px;
 }
 .el-menu a{
     text-decoration: none;
