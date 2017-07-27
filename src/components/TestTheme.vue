@@ -63,7 +63,7 @@
         </div>
         <el-table
             :data="tableData"
-            style="width: 80%">
+            >
             <el-table-column
                 prop="date"
                 label="日期"
@@ -183,7 +183,8 @@ export default {
 
 <style scoped>
     .testTheme{
-        /* margin: 20px; */
+        max-width: 1024px;
+        margin: 0 auto;
         text-align: left;
     }
     .testTheme div{

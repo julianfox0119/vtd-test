@@ -29,7 +29,5 @@ body {
   text-align: center;
   /* color: #2c3e50; */
 }
-.main-content{
-  padding: 20px;
-}
+
 </style>
