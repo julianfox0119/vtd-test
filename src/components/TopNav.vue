@@ -1,10 +1,21 @@
+<i18n>
+{
+  "en": {
+    "help": "Help"
+  },
+  "zh": {
+    "help": "帮助"
+  }
+}
+</i18n>
+
 <template>
     <header>
         <el-row class="head_container">
             <el-col :xs="1" :sm="1" :md="2" :lg="2" class="head_logo"><img src="../assets/mblogo.png" class="header-logo"></el-col>
             <el-col :xs="23" :sm="23" :md="22" :lg="22" class="head_nav">
                 <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-                    <el-menu-item index="1">帮助</el-menu-item>
+                    <el-menu-item index="1">{{ $t('help', this.$store.state.locale) }}</el-menu-item>
                     <el-submenu index="2">
                         <template slot="title">我的工作台</template>
                         <el-menu-item index="2-1">选项1</el-menu-item>
