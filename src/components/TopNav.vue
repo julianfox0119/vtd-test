@@ -43,6 +43,10 @@ export default {
     handleSelect (key, keyPath) {
     //   console.log(key, keyPath)
     }
+  },
+  mounted () {
+    // todo: get data from backend
+    this.$store.state.locale = 'zh'
   }
 }
 </script>

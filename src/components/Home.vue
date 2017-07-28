@@ -2,11 +2,13 @@
 {
   "en": {
     "hello": "hello world!",
-    "eco": "Ecosystem"
+    "eco": "Ecosystem",
+    "btntext": "test btn"
   },
   "zh": {
     "hello": "你好，世界！",
-    "eco": "生态系统"
+    "eco": "生态系统",
+    "btntext": "测试按钮"
   }
 }
 </i18n>
@@ -15,8 +17,8 @@
   <div class="home">
     <h1>{{ msg }}</h1>
     <h2>{{ $t('eco', this.$store.state.locale) }}</h2>
-    <el-button type="primary" @click="clickBtn">test btn</el-button>
-    <p>message: {{ $t('hello', this.$store.state.locale) }}</p>
+    <el-button type="primary" @click="clickBtn">{{ $t('btntext', this.$store.state.locale) }}</el-button>
+    <p>{{ $t('hello', this.$store.state.locale) }}</p>
   </div>
 </template>
 
@@ -46,7 +48,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .home{
-  text-align: center;
+  text-align: left;
 }
 h1, h2 {
   font-weight: normal;

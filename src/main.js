@@ -17,7 +17,7 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    locale : 'en'
+    locale : ''
   },
   mutations: {
     changeLocale (state, newlocale) {
