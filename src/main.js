@@ -6,16 +6,30 @@ import router from './router'
 import ElementUI from 'element-ui'
 import VueI18n from 'vue-i18n'
 
+import Vuex from 'vuex'
 import '../theme/index.css'
 
 Vue.config.productionTip = false
 
 Vue.use(ElementUI)
 Vue.use(VueI18n)
+Vue.use(Vuex)
+
+const store = new Vuex.Store({
+  state: {
+    locale : 'en'
+  },
+  mutations: {
+    changeLocale (newlocale) {
+      state.locale = newlocale
+    }
+  }
+})
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   template: '<App/>',
   components: { App }

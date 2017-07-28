@@ -39,6 +39,8 @@ export default {
   },
   methods: {
     clickBtn: function (event) {
+      console.log(this.$i18n.locale)
+      console.log(this.$store.state.locale)
       this.msg = 'Welcome to Your VTD Dashboard'
     }
   }
