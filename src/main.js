@@ -21,7 +21,6 @@ const store = new Vuex.Store({
   },
   mutations: {
     changeLocale (state, newlocale) {
-      console.log('main: ', state.locale)
       state.locale = newlocale
     }
   }

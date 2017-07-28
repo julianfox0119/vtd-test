@@ -38,7 +38,6 @@ export default {
       } else {
         this.$store.commit('changeLocale', 'en')
       }
-      console.log('current loc: ', currentloc)
     },
     handleSelect (key, keyPath) {
     //   console.log(key, keyPath)
