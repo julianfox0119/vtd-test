@@ -20,7 +20,7 @@ const store = new Vuex.Store({
     locale : 'en'
   },
   mutations: {
-    changeLocale (newlocale) {
+    changeLocale (state, newlocale) {
       state.locale = newlocale
     }
   }

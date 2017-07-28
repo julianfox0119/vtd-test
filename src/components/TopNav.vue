@@ -15,7 +15,7 @@
                         <!-- <a href="/test">主题测试</a> -->
                         <router-link to="/test">主题测试</router-link>
                     </el-menu-item>
-                    <el-menu-item index="4">中文/En</el-menu-item>
+                    <el-menu-item index="4" @click="changeLocale">中文/En</el-menu-item>
                 </el-menu>
             </el-col>
         </el-row>
@@ -31,6 +31,13 @@ export default {
     }
   },
   methods: {
+    changeLocale () {
+      console.log(this.$store.state.locale)
+      let currentloc = this.$store.state.locale
+      if (currentloc === 'en') {
+        this.$store.commit('changeLocale', 'zh')
+      }
+    },
     handleSelect (key, keyPath) {
     //   console.log(key, keyPath)
     }
