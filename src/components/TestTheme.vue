@@ -6,7 +6,7 @@
             <el-button type="primary" :disabled="true">主要按钮</el-button>
             <button type="button" class="el-button el-button--primary">
                 <i class="mb-icon-home"></i>
-                <span>Home</span>
+                <router-link to="/">Home</router-link>
             </button>
         </div>
         <div>Ratio:
@@ -20,7 +20,7 @@
             <el-input v-model="input" placeholder="请输入内容"></el-input>
         </div>
         <div class="block">
-            <span class="demonstration">Date Picker: </span>
+            <span class="demonstration0">Date Picker: </span>
             <el-date-picker
             v-model="value1"
             type="date"
@@ -29,7 +29,7 @@
             </el-date-picker>
         </div>
         <div class="block">
-            <span class="demonstration">Date Picker (Scope): </span>
+            <span class="demonstration1">Date Picker (Scope): </span>
             <el-date-picker
             v-model="value7"
             type="daterange"
@@ -39,7 +39,7 @@
             </el-date-picker>
         </div>
         <div class="block">
-            <span class="demonstration">默认 click 触发子菜单: </span>
+            <span class="demonstration2">默认 click 触发子菜单: </span>
             <el-cascader
             :options="options2"
             @active-item-change="handleItemChange"
