@@ -1,8 +1,25 @@
+<i18n>
+{
+  "en": {
+    "hello": "hello world!"
+  },
+  "zh": {
+    "hello": "你好，世界！"
+  }
+}
+</i18n>
+
 <template>
   <div class="home">
     <h1>{{ msg }}</h1>
     <h2>Ecosystem</h2>
     <el-button type="primary" @click="clickBtn">test btn</el-button>
+    <label for="locale">locale</label>
+    <select v-model="locale">
+      <option>en</option>
+      <option>zh</option>
+    </select>
+    <p>message: {{ $t('hello') }}</p>
   </div>
 </template>
 
@@ -11,7 +28,13 @@ export default {
   name: 'home',
   data () {
     return {
-      msg: ''
+      msg: '',
+      locale: 'en'
+    }
+  },
+  watch: {
+    locale (val) {
+      this.$i18n.locale = val
     }
   },
   methods: {
