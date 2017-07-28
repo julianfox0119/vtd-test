@@ -32,11 +32,13 @@ export default {
   },
   methods: {
     changeLocale () {
-      console.log(this.$store.state.locale)
       let currentloc = this.$store.state.locale
       if (currentloc === 'en') {
         this.$store.commit('changeLocale', 'zh')
+      } else {
+        this.$store.commit('changeLocale', 'en')
       }
+      console.log('current loc: ', currentloc)
     },
     handleSelect (key, keyPath) {
     //   console.log(key, keyPath)

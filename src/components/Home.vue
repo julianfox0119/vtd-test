@@ -1,10 +1,12 @@
 <i18n>
 {
   "en": {
-    "hello": "hello world!"
+    "hello": "hello world!",
+    "eco": "Ecosystem"
   },
   "zh": {
-    "hello": "你好，世界！"
+    "hello": "你好，世界！",
+    "eco": "生态系统"
   }
 }
 </i18n>
@@ -12,14 +14,9 @@
 <template>
   <div class="home">
     <h1>{{ msg }}</h1>
-    <h2>Ecosystem</h2>
+    <h2>{{ $t('eco', this.$store.state.locale) }}</h2>
     <el-button type="primary" @click="clickBtn">test btn</el-button>
-    <label for="locale">locale</label>
-    <select v-model="locale">
-      <option>en</option>
-      <option>zh</option>
-    </select>
-    <p>message: {{ $t('hello') }}</p>
+    <p>message: {{ $t('hello', this.$store.state.locale) }}</p>
   </div>
 </template>
 
@@ -33,14 +30,13 @@ export default {
     }
   },
   watch: {
-    locale (val) {
+    locale: function (val) {
+      console.log(val)
       this.$i18n.locale = val
     }
   },
   methods: {
     clickBtn: function (event) {
-      console.log(this.$i18n.locale)
-      console.log(this.$store.state.locale)
       this.msg = 'Welcome to Your VTD Dashboard'
     }
   }
