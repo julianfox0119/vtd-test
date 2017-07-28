@@ -34,6 +34,10 @@
 </template>
 
 <script>
+import langEn from 'element-ui/lib/locale/lang/en'
+import langZh from 'element-ui/lib/locale/lang/zh-CN'
+import euilocale from 'element-ui/lib/locale'
+
 export default {
   name: 'top',
   data () {
@@ -46,17 +50,15 @@ export default {
       let currentloc = this.$store.state.locale
       if (currentloc === 'en') {
         this.$store.commit('changeLocale', 'zh')
+        euilocale.use(langZh)
       } else {
         this.$store.commit('changeLocale', 'en')
+        euilocale.use(langEn)
       }
     },
     handleSelect (key, keyPath) {
     //   console.log(key, keyPath)
     }
-  },
-  mounted () {
-    // todo: get data from backend
-    this.$store.state.locale = 'zh'
   }
 }
 </script>

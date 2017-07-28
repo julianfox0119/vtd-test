@@ -165,7 +165,6 @@ export default {
       if (this.active++ > 2) this.active = 0
     },
     handleItemChange (val) {
-      console.log(this.$store.state.locale)
       setTimeout(_ => {
         if (val.indexOf('江苏') > -1 && !this.options2[0].cities.length) {
           this.options2[0].cities = [{

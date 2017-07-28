@@ -6,6 +6,10 @@ import router from './router'
 import ElementUI from 'element-ui'
 import VueI18n from 'vue-i18n'
 
+import langEn from 'element-ui/lib/locale/lang/en'
+import langZh from 'element-ui/lib/locale/lang/zh-CN'
+import euilocale from 'element-ui/lib/locale'
+
 import Vuex from 'vuex'
 import '../theme/index.css'
 
@@ -14,6 +18,8 @@ Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(VueI18n)
 Vue.use(Vuex)
+
+// euilocale.use(lang)
 
 const store = new Vuex.Store({
   state: {
