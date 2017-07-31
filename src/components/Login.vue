@@ -7,12 +7,12 @@
         <el-input type="password" v-model="ruleForm.pass" auto-complete="off"></el-input>
     </el-form-item>
     <el-form-item label="语言/Language" prop="language">
-        <el-radio-group v-model="ruleForm.language">
+        <el-radio-group v-model="ruleForm.language" class="langSet" @change="setLanguage">
         <el-radio label="中文/Zh"></el-radio>
         <el-radio label="英文/En"></el-radio>
         </el-radio-group>
     </el-form-item>
-    <el-form-item>
+    <el-form-item class="btnGrp">
         <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>
         <el-button @click="resetForm('ruleForm')">重置</el-button>
     </el-form-item>
@@ -45,7 +45,7 @@
         ruleForm: {
           checkName: '',
           pass: '',
-          language: ''
+          language: '中文/Zh'
         },
         rules: {
           checkName: [
@@ -61,9 +61,23 @@
       }
     },
     methods: {
+      setLanguage () {
+        console.log(this.ruleForm.language)
+        if (this.ruleForm.language === '中文/Zh') {
+          localStorage.currentLang = 'zh'
+        } else {
+          localStorage.currentLang = 'en'
+        }
+        console.log(localStorage.currentLang)
+      },
       submitForm (formName) {
         this.$refs[formName].validate((valid) => {
           if (valid) {
+            if (localStorage.currentLang === 'zh') {
+              euilocale.use(langZh)
+            } else {
+              euilocale.use(langEn)
+            }
             this.$router.push('/')
           } else {
             console.log('error submit!!')
@@ -79,10 +93,9 @@
       if (localStorage.currentLang === undefined) {
         localStorage.currentLang = 'zh'
       }
-      if (localStorage.currentLang === 'zh') {
+      if (this.ruleForm.language === '中文/Zh') {
+        localStorage.currentLang = 'zh'
         euilocale.use(langZh)
-      } else {
-        euilocale.use(langEn)
       }
     }
   }
@@ -92,6 +105,10 @@
 .demo-ruleForm{
     width: 30%;
     margin: 50px auto;
+    text-align: left;
+}
+.btnGrp{
     text-align: center;
 }
+
 </style>
