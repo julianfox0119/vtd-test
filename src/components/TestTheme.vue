@@ -37,7 +37,7 @@
             <el-date-picker
             v-model="value1"
             type="date"
-            :placeholder="$t('placeholderDate', this.$store.state.locale)"
+            :placeholder="$t('placeholderDate', currentLang)"
             :picker-options="pickerOptions0">
             </el-date-picker>
         </div>
@@ -47,7 +47,7 @@
             v-model="value7"
             type="daterange"
             align="right"
-            :placeholder="$t('placeholderDate', this.$store.state.locale)"
+            :placeholder="$t('placeholderDate', currentLang)"
             :picker-options="pickerOptions2">
             </el-date-picker>
         </div>
@@ -100,7 +100,7 @@ export default {
       input: '',
       value7: '',
       value1: '',
-      currentLocale: '',
+      currentLang: localStorage.currentLang,
       pickerOptions0: {
         disabledDate (time) {
           return time.getTime() < Date.now() - 8.64e7
@@ -108,7 +108,7 @@ export default {
       },
       pickerOptions2: {
         shortcuts: [{
-          text: this.$t('shortcuts1', this.$store.state.locale),
+          text: this.$t('shortcuts1', localStorage.currentLang),
           onClick (picker) {
             const end = new Date()
             const start = new Date()
@@ -163,6 +163,9 @@ export default {
     next () {
       if (this.active++ > 2) this.active = 0
     }
+  },
+  mounted () {
+    console.log(this.currentLang)
   }
 }
 </script>

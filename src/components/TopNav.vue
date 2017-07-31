@@ -15,7 +15,7 @@
             <el-col :xs="1" :sm="1" :md="2" :lg="2" class="head_logo"><img src="../assets/mblogo.png" class="header-logo"></el-col>
             <el-col :xs="23" :sm="23" :md="22" :lg="22" class="head_nav">
                 <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-                    <el-menu-item index="1">{{ $t('help', this.$store.state.locale) }}</el-menu-item>
+                    <el-menu-item index="1">{{ $t('help', currentLang) }}</el-menu-item>
                     <el-submenu index="2">
                         <template slot="title">我的工作台</template>
                         <el-menu-item index="2-1">选项1</el-menu-item>
@@ -26,7 +26,7 @@
                         <!-- <a href="/test">主题测试</a> -->
                         <router-link to="/test">主题测试</router-link>
                     </el-menu-item>
-                    <el-menu-item index="4" @click="changeLocale">中文/En</el-menu-item>
+                    <el-menu-item index="4" @click="switchLang">中文/En</el-menu-item>
                 </el-menu>
             </el-col>
         </el-row>
@@ -42,25 +42,39 @@ export default {
   name: 'top',
   data () {
     return {
-      activeIndex: '1'
+      activeIndex: '1',
+      currentLang: localStorage.currentLang
     }
   },
   methods: {
-    changeLocale () {
-      let currentloc = this.$store.state.locale
-      if (currentloc === 'en') {
-        this.$store.commit('changeLocale', 'zh')
-        euilocale.use(langZh)
+    switchLang () {
+      if (localStorage.currentLang === undefined) {
+        localStorage.currentLang = 'zh'
       } else {
-        this.$store.commit('changeLocale', 'en')
-        euilocale.use(langEn)
+        if (localStorage.currentLang === 'en') {
+          localStorage.currentLang = 'zh'
+          console.log(localStorage.currentLang, langZh)
+          euilocale.use(langZh)
+        } else {
+          localStorage.currentLang = 'en'
+          console.log(localStorage.currentLang, langEn)
+          euilocale.use(langEn)
+        }
       }
-      this.$router.replace('/')
-    //   this.$router.replace(this.$router.currentRoute.fullPath)
-    //   console.log(window.location.pathname, this.$router.currentRoute.fullPath)
+      window.location.reload()
     },
     handleSelect (key, keyPath) {
     //   console.log(key, keyPath)
+    }
+  },
+  mounted () {
+    if (localStorage.currentLang === undefined) {
+      localStorage.currentLang = 'zh'
+    }
+    if (localStorage.currentLang === 'zh') {
+      euilocale.use(langZh)
+    } else {
+      euilocale.use(langEn)
     }
   }
 }

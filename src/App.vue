@@ -13,10 +13,6 @@ export default {
   name: 'app',
   components: {
     TopNav
-  },
-  mounted () {
-    // todo: get data from backend
-    this.$store.state.locale = 'zh'
   }
 }
 </script>

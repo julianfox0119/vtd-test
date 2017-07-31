@@ -16,9 +16,9 @@
 <template>
   <div class="home">
     <h1>{{ msg }}</h1>
-    <h2>{{ $t('eco', this.$store.state.locale) }}</h2>
-    <el-button type="primary" @click="clickBtn">{{ $t('btntext', this.$store.state.locale) }}</el-button>
-    <p>{{ $t('hello', this.$store.state.locale) }}</p>
+    <h2>{{ $t('eco', currentLang) }}</h2>
+    <el-button type="primary" @click="clickBtn">{{ $t('btntext', currentLang) }}</el-button>
+    <p>{{ $t('hello', currentLang) }}</p>
   </div>
 </template>
 
@@ -28,13 +28,7 @@ export default {
   data () {
     return {
       msg: '',
-      locale: 'en'
-    }
-  },
-  watch: {
-    locale: function (val) {
-      console.log(val)
-      this.$i18n.locale = val
+      currentLang: localStorage.currentLang
     }
   },
   methods: {
