@@ -2,7 +2,7 @@
 {
   "en": {
     "placeholderDate": "Pick a Day",
-    "shortcuts1": "Resently Week"
+    "shortcuts1": "Last Week"
   },
   "zh": {
     "placeholderDate": "选择日期",
