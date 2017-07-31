@@ -1,22 +1,26 @@
 <template>
-  <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="120px" class="demo-ruleForm">
-    <el-form-item label="姓名/Name" prop="checkName">
-        <el-input type="name" v-model="ruleForm.checkName" auto-complete="off"></el-input>
-    </el-form-item>
-    <el-form-item label="密码/Password" prop="pass">
-        <el-input type="password" v-model="ruleForm.pass" auto-complete="off"></el-input>
-    </el-form-item>
-    <el-form-item label="语言/Language" prop="language">
-        <el-radio-group v-model="ruleForm.language" class="langSet" @change="setLanguage">
-        <el-radio label="中文/Zh"></el-radio>
-        <el-radio label="英文/En"></el-radio>
-        </el-radio-group>
-    </el-form-item>
-    <el-form-item class="btnGrp">
-        <el-button type="info" @click="submitForm('ruleForm')">提交/Submit</el-button>
-        <el-button type="primary" @click="resetForm('ruleForm')">重置/Reset</el-button>
-    </el-form-item>
-    </el-form>
+  <el-row>
+    <el-col :xs="16" :sm="16" :md="8" :lg="8" class="login-container">
+      <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="120px" class="demo-ruleForm">
+        <el-form-item label="姓名/Name" prop="checkName">
+            <el-input type="name" v-model="ruleForm.checkName" auto-complete="off"></el-input>
+        </el-form-item>
+        <el-form-item label="密码/Password" prop="pass">
+            <el-input type="password" v-model="ruleForm.pass" auto-complete="off"></el-input>
+        </el-form-item>
+        <el-form-item label="语言/Language" prop="language">
+            <el-radio-group v-model="ruleForm.language" class="langSet" @change="setLanguage">
+            <el-radio label="中文/Zh"></el-radio>
+            <el-radio label="英文/En"></el-radio>
+            </el-radio-group>
+        </el-form-item>
+        <el-form-item class="btnGrp">
+            <el-button type="info" @click="submitForm('ruleForm')">提交/Submit</el-button>
+            <el-button type="primary" @click="resetForm('ruleForm')">重置/Reset</el-button>
+        </el-form-item>
+      </el-form>
+    </el-col>
+  </el-row>
 </template>
 
 <script>
@@ -105,9 +109,12 @@
 </script>
 
 <style scoped>
-.demo-ruleForm{
-    width: 25%;
-    margin: 80px auto;
+.login-container{
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+}
+.demo-ruleForm{   
     text-align: left;
 }
 .btnGrp{
