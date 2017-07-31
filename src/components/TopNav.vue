@@ -95,9 +95,9 @@ ul {
     text-decoration: none;
 }
 @media (max-width: 550px) {
-  /* .header-logo{
+   .header-logo{
     display: none;
-  } */
+  } 
 }
 
 </style>
