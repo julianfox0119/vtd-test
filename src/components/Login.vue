@@ -13,8 +13,8 @@
         </el-radio-group>
     </el-form-item>
     <el-form-item class="btnGrp">
-        <el-button type="primary" @click="submitForm('ruleForm')">提交/Submit</el-button>
-        <el-button @click="resetForm('ruleForm')">重置/Reset</el-button>
+        <el-button type="info" @click="submitForm('ruleForm')">提交/Submit</el-button>
+        <el-button type="primary" @click="resetForm('ruleForm')">重置/Reset</el-button>
     </el-form-item>
     </el-form>
 </template>
@@ -106,8 +106,8 @@
 
 <style scoped>
 .demo-ruleForm{
-    width: 30%;
-    margin: 50px auto;
+    width: 25%;
+    margin: 80px auto;
     text-align: left;
 }
 .btnGrp{
