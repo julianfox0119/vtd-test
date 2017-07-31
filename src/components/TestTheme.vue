@@ -1,3 +1,14 @@
+<i18n>
+{
+  "en": {
+    "placeholderDate": "Please select a Date"
+  },
+  "zh": {
+    "placeholderDate": "请选择一个日期"
+  }
+}
+</i18n>
+
 <template>
     <div class="testTheme">  
         <div>Button:
@@ -24,7 +35,7 @@
             <el-date-picker
             v-model="value1"
             type="date"
-            placeholder="选择日期"
+            :placeholder="$t('placeholderDate', this.$store.state.locale)"
             :picker-options="pickerOptions0">
             </el-date-picker>
         </div>
@@ -34,17 +45,9 @@
             v-model="value7"
             type="daterange"
             align="right"
-            placeholder="选择日期范围"
+            :placeholder="$t('placeholderDate', this.$store.state.locale)"
             :picker-options="pickerOptions2">
             </el-date-picker>
-        </div>
-        <div class="block">
-            <span class="demonstration">默认 click 触发子菜单: </span>
-            <el-cascader
-            :options="options2"
-            @active-item-change="handleItemChange"
-            :props="props"
-            ></el-cascader>
         </div>
         <div class="block">
             <el-steps :space="100" :active="active" finish-status="success">
@@ -127,13 +130,6 @@ export default {
           }
         }]
       },
-      options2: [{
-        label: '江苏',
-        cities: []
-      }, {
-        label: '浙江',
-        cities: []
-      }],
       tableData: [{
         date: '2016-05-02',
         name: '王小虎',
@@ -163,20 +159,10 @@ export default {
     },
     next () {
       if (this.active++ > 2) this.active = 0
-    },
-    handleItemChange (val) {
-      setTimeout(_ => {
-        if (val.indexOf('江苏') > -1 && !this.options2[0].cities.length) {
-          this.options2[0].cities = [{
-            label: '南京'
-          }]
-        } else if (val.indexOf('浙江') > -1 && !this.options2[1].cities.length) {
-          this.options2[1].cities = [{
-            label: '杭州'
-          }]
-        }
-      }, 300)
     }
+  },
+  mounted () {
+    console.log(this.$store.state.locale)
   }
 }
 </script>

@@ -55,7 +55,7 @@ export default {
         this.$store.commit('changeLocale', 'en')
         euilocale.use(langEn)
       }
-      this.$router.replace('/')
+    //   this.$router.replace('/')
     },
     handleSelect (key, keyPath) {
     //   console.log(key, keyPath)
@@ -103,4 +103,3 @@ ul {
 }
 
 </style>
-
