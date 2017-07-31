@@ -26,7 +26,6 @@
                         <!-- <a href="/test">主题测试</a> -->
                         <router-link to="/test">主题测试</router-link>
                     </el-menu-item>
-                    <el-menu-item index="4" @click="switchLang">中文/En</el-menu-item>
                 </el-menu>
             </el-col>
         </el-row>
@@ -34,10 +33,6 @@
 </template>
 
 <script>
-import langEn from 'element-ui/lib/locale/lang/en'
-import langZh from 'element-ui/lib/locale/lang/zh-CN'
-import euilocale from 'element-ui/lib/locale'
-
 export default {
   name: 'top',
   data () {
@@ -47,34 +42,8 @@ export default {
     }
   },
   methods: {
-    switchLang () {
-      if (localStorage.currentLang === undefined) {
-        localStorage.currentLang = 'zh'
-      } else {
-        if (localStorage.currentLang === 'en') {
-          localStorage.currentLang = 'zh'
-          console.log(localStorage.currentLang, langZh)
-          euilocale.use(langZh)
-        } else {
-          localStorage.currentLang = 'en'
-          console.log(localStorage.currentLang, langEn)
-          euilocale.use(langEn)
-        }
-      }
-      window.location.reload()
-    },
     handleSelect (key, keyPath) {
     //   console.log(key, keyPath)
-    }
-  },
-  mounted () {
-    if (localStorage.currentLang === undefined) {
-      localStorage.currentLang = 'zh'
-    }
-    if (localStorage.currentLang === 'zh') {
-      euilocale.use(langZh)
-    } else {
-      euilocale.use(langEn)
     }
   }
 }
