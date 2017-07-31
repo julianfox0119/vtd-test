@@ -53,10 +53,10 @@
         },
         rules: {
           checkName: [
-            { validator: validateName, trigger: 'blur' }
+            { validator: validateName, trigger: 'blur', required: true }
           ],
           pass: [
-            { validator: validatePass, trigger: 'blur' }
+            { validator: validatePass, trigger: 'blur', required: true }
           ],
           language: [
             { required: true, message: '请选择语言/Select a Language', trigger: 'change' }
