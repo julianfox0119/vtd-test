@@ -14,7 +14,7 @@
 <template>
     <header>
         <el-row class="head_container">
-            <el-col :xs="1" :sm="1" :md="2" :lg="2" class="head_logo"><img src="../assets/mblogo.png" class="header-logo"></el-col>
+            <el-col :xs="1" :sm="1" :md="2" :lg="2" class="head_logo"><img src="../assets/mblogo.png" class="header-logo" @click="goHome"></el-col>
             <el-col :xs="23" :sm="23" :md="22" :lg="22" class="head_nav" v-if="this.$store.state.isLogin">
                 <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
                     <el-menu-item index="1">{{ $t('help', this.$store.state.locale) }}</el-menu-item>
@@ -45,6 +45,9 @@ export default {
     }
   },
   methods: {
+    goHome () {
+      this.$router.push('/')
+    },
     handleSelect (key, keyPath) {
     //   console.log(key, keyPath)
     },
