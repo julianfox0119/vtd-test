@@ -23,11 +23,15 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    locale : 'zh'
+    locale : '',
+    isLogin : false
   },
   mutations: {
     changeLocale (state, newlocale) {
       state.locale = newlocale
+    },
+    loginDone (state, newState) {
+      state.isLogin = newState
     }
   }
 })

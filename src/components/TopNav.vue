@@ -1,10 +1,12 @@
 <i18n>
 {
   "en": {
-    "help": "Help"
+    "help": "Help",
+    "login": "Login"
   },
   "zh": {
-    "help": "帮助"
+    "help": "帮助",
+    "login": "登录"
   }
 }
 </i18n>
@@ -13,9 +15,9 @@
     <header>
         <el-row class="head_container">
             <el-col :xs="1" :sm="1" :md="2" :lg="2" class="head_logo"><img src="../assets/mblogo.png" class="header-logo"></el-col>
-            <el-col :xs="23" :sm="23" :md="22" :lg="22" class="head_nav">
+            <el-col :xs="23" :sm="23" :md="22" :lg="22" class="head_nav" v-if="this.$store.state.isLogin">
                 <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-                    <el-menu-item index="1">{{ $t('help', currentLang) }}</el-menu-item>
+                    <el-menu-item index="1">{{ $t('help', this.$store.state.locale) }}</el-menu-item>
                     <el-submenu index="2">
                         <template slot="title">我的工作台</template>
                         <el-menu-item index="2-1">选项1</el-menu-item>
@@ -26,6 +28,7 @@
                         <!-- <a href="/test">主题测试</a> -->
                         <router-link to="/test">主题测试</router-link>
                     </el-menu-item>
+                    <el-menu-item index="4" @click="handleLogin">{{ $t('login', this.$store.state.locale) }}</el-menu-item>
                 </el-menu>
             </el-col>
         </el-row>
@@ -44,7 +47,14 @@ export default {
   methods: {
     handleSelect (key, keyPath) {
     //   console.log(key, keyPath)
+    },
+    handleLogin () {
+      this.$store.commit('loginDone', false)
+      this.$router.replace('/login')
     }
+  },
+  mounted () {
+    console.log(this.currentLang)
   }
 }
 </script>

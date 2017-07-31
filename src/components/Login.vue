@@ -13,8 +13,8 @@
         </el-radio-group>
     </el-form-item>
     <el-form-item class="btnGrp">
-        <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>
-        <el-button @click="resetForm('ruleForm')">重置</el-button>
+        <el-button type="primary" @click="submitForm('ruleForm')">提交/Submit</el-button>
+        <el-button @click="resetForm('ruleForm')">重置/Reset</el-button>
     </el-form-item>
     </el-form>
 </template>
@@ -68,6 +68,7 @@
         } else {
           localStorage.currentLang = 'en'
         }
+        this.$store.commit('changeLocale', localStorage.currentLang)
         console.log(localStorage.currentLang)
       },
       submitForm (formName) {
@@ -78,7 +79,8 @@
             } else {
               euilocale.use(langEn)
             }
-            this.$router.push('/')
+            this.$store.commit('loginDone', true)
+            this.$router.replace('/')
           } else {
             console.log('error submit!!')
             return false
@@ -97,6 +99,7 @@
         localStorage.currentLang = 'zh'
         euilocale.use(langZh)
       }
+      this.$store.commit('changeLocale', localStorage.currentLang)
     }
   }
 </script>
