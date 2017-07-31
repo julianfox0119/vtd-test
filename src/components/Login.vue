@@ -59,7 +59,7 @@
             { validator: validatePass, trigger: 'blur', required: true }
           ],
           language: [
-            { required: true, message: '请选择语言/Select a Language', trigger: 'change' }
+            { message: '请选择语言/Select a Language', trigger: 'change' }
           ]
         }
       }
