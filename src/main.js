@@ -23,7 +23,7 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    locale : ''
+    locale : 'zh'
   },
   mutations: {
     changeLocale (state, newlocale) {
@@ -36,6 +36,7 @@ const store = new Vuex.Store({
 new Vue({
   el: '#app',
   store,
+  VueI18n,
   router,
   template: '<App/>',
   components: { App }

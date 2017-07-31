@@ -55,7 +55,9 @@ export default {
         this.$store.commit('changeLocale', 'en')
         euilocale.use(langEn)
       }
-    //   this.$router.replace('/')
+      this.$router.replace('/')
+    //   this.$router.replace(this.$router.currentRoute.fullPath)
+    //   console.log(window.location.pathname, this.$router.currentRoute.fullPath)
     },
     handleSelect (key, keyPath) {
     //   console.log(key, keyPath)

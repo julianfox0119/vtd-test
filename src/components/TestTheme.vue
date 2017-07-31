@@ -1,10 +1,12 @@
 <i18n>
 {
   "en": {
-    "placeholderDate": "Please select a Date"
+    "placeholderDate": "Pick a Day",
+    "shortcuts1": "Resently Week"
   },
   "zh": {
-    "placeholderDate": "请选择一个日期"
+    "placeholderDate": "选择日期",
+    "shortcuts1": "最近一周"
   }
 }
 </i18n>
@@ -98,6 +100,7 @@ export default {
       input: '',
       value7: '',
       value1: '',
+      currentLocale: '',
       pickerOptions0: {
         disabledDate (time) {
           return time.getTime() < Date.now() - 8.64e7
@@ -105,7 +108,7 @@ export default {
       },
       pickerOptions2: {
         shortcuts: [{
-          text: '最近一周',
+          text: this.$t('shortcuts1', this.$store.state.locale),
           onClick (picker) {
             const end = new Date()
             const start = new Date()
@@ -160,9 +163,6 @@ export default {
     next () {
       if (this.active++ > 2) this.active = 0
     }
-  },
-  mounted () {
-    console.log(this.$store.state.locale)
   }
 }
 </script>
