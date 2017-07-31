@@ -24,11 +24,8 @@
                         <el-menu-item index="2-2">选项2</el-menu-item>
                         <el-menu-item index="2-3">选项3</el-menu-item>
                     </el-submenu> 
-                    <el-menu-item index="3">
-                        <!-- <a href="/test">主题测试</a> -->
-                        <router-link to="/test">主题测试</router-link>
-                    </el-menu-item>
-                    <el-menu-item index="4" @click="handleLogin">{{ $t('login', this.$store.state.locale) }}</el-menu-item>
+                    <el-menu-item index="3" @click="goTheme">主题测试</el-menu-item>
+                    <el-menu-item index="4" @click="goLogin">{{ $t('login', this.$store.state.locale) }}</el-menu-item>
                 </el-menu>
             </el-col>
         </el-row>
@@ -48,12 +45,15 @@ export default {
     goHome () {
       this.$router.push('/')
     },
+    goTheme () {
+      this.$router.push('/test')
+    },
     handleSelect (key, keyPath) {
     //   console.log(key, keyPath)
     },
-    handleLogin () {
+    goLogin () {
       this.$store.commit('loginDone', false)
-      this.$router.replace('/login')
+      this.$router.push('/login')
     }
   },
   mounted () {
