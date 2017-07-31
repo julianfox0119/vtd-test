@@ -4583,6 +4583,7 @@
 .el-radio__label {
     font-size: 14px;
     padding-left: 5px;
+    color: #ffffff;
 }
 @charset "UTF-8";
 :root {
@@ -14273,7 +14274,7 @@
     vertical-align: middle;
     float: left;
     font-size: 14px;
-    color: #666666;
+    color: #ffffff;
     line-height: 1;
     padding: 11px 12px 11px 0;
     box-sizing: border-box;

@@ -29,14 +29,14 @@
     data () {
       var validateName = (rule, value, callback) => {
         if (value === '') {
-          callback(new Error('请输入姓名'))
+          callback(new Error('请输入姓名/Name Required'))
         } else {
           callback()
         }
       }
       var validatePass = (rule, value, callback) => {
         if (value === '') {
-          callback(new Error('请输入密码'))
+          callback(new Error('请输入密码/Passward Required'))
         } else {
           callback()
         }
